@@ -1,6 +1,6 @@
 # MaterialMessageBox
 
-### MaterialMessageBox works on .Net Core and .Net Framework 
+### MaterialMessageBox works on .Net Core and .Net Framework
 
 # How it works?
 

@@ -1,0 +1,32 @@
+﻿<Window x:Class="CusomMessageBox.MMBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CusomMessageBox"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MaterialMessageBox" Height="215" Width="360" Closing="setDefault" MinHeight="215" MinWidth="360" ResizeMode="NoResize" MaxWidth="360" MaxHeight="215">
+    <Grid>
+        <materialDesign:PackIcon x:Name="BoxIcon" HorizontalAlignment="Right" VerticalAlignment="Top" Width="70" Height="70" Margin="0,12,12,0" Foreground="#FFFFB900"></materialDesign:PackIcon>
+            
+            <ScrollViewer Width="250" MinWidth="250" MaxWidth="250" Height="110" MinHeight="110" MaxHeight="110" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" VerticalScrollBarVisibility="Hidden">
+                <TextBlock Name="Content" MaxWidth="250" TextWrapping="Wrap" Margin="0" MinWidth="250" Width="250" ScrollViewer.CanContentScroll="True" VerticalAlignment="Top" HorizontalAlignment="Left" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+            </ScrollViewer>
+
+            <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10" Orientation="Horizontal" Grid.Row="1">
+            <Button x:Name="button2" Click="setresult" Margin="0,0,10,0" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}"/>
+            <Button x:Name="button1" Click="setresult" Margin="0,0,10,0" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White">
+            </Button>
+            <Button x:Name="button0" Click="setresult" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White">
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,4 +1,4 @@
-MaterialMessageBox works on .Net Core and .Net Framework,
+MaterialMessageBox works on .Net Core and .Net Framework,<br/>
 you have to install the <a href="https://www.nuget.org/packages/MaterialDesignThemes/4.4.0-ci94">MaterialDesignThemes from nuGet</a>
 
 all you need now is download the .dl file from my releses (direct download <b><a href="https://github.com/Mene-hub/MaterialMessageBox/releases/download/library/CusomMessageBox.dll">HERE</a></b>)

@@ -17,3 +17,22 @@ C:\Users\Claudio\source\repos\CusomMessageBox\CusomMessageBox\obj\Debug\CusomMes
 C:\Users\Claudio\source\repos\CusomMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.csproj.GenerateResource.cache
 C:\Users\Claudio\source\repos\CusomMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.csproj.CoreCompileInputs.cache
 C:\Users\Claudio\source\repos\CusomMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.csproj.CopyComplete
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\bin\Debug\CusomMessageBox.dll
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\bin\Debug\CusomMessageBox.pdb
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\bin\Debug\MaterialDesignColors.dll
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\bin\Debug\MaterialDesignThemes.Wpf.dll
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\bin\Debug\MaterialDesignColors.pdb
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\bin\Debug\MaterialDesignThemes.Wpf.pdb
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\bin\Debug\MaterialDesignThemes.Wpf.xml
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.csproj.AssemblyReference.cache
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\MMBox.g.cs
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox_MarkupCompile.cache
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox_MarkupCompile.lref
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\MMBox.baml
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.g.resources
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.Properties.Resources.resources
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.csproj.GenerateResource.cache
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.csproj.CoreCompileInputs.cache
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.csproj.CopyComplete
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.dll
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\CusomMessageBox.pdb

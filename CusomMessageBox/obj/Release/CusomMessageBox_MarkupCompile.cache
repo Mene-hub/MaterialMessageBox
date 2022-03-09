@@ -4,11 +4,11 @@
 library
 C#
 .cs
-M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Debug\
+M:\progetti git hub\MaterialMessageBox\MaterialMessageBox\CusomMessageBox\obj\Release\
 CusomMessageBox
 none
 false
-DEBUG;TRACE
+TRACE
 
 11111783994
 
@@ -16,5 +16,5 @@ DEBUG;TRACE
 15565170065
 MMBox.xaml;
 
-False
+True
 

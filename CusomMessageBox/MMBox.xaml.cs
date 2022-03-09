@@ -185,6 +185,7 @@ namespace CusomMessageBox
 
         internal void setIcon(MessageBoxImage image)
         {
+            this.Width += 70;
             switch (image)
             {
                 case MessageBoxImage.Error:
@@ -204,7 +205,8 @@ namespace CusomMessageBox
                     BoxIcon.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFFB900"));
                     break;
                 case MessageBoxImage.None:
-                    BoxIcon.Kind = PackIconKind.None;
+                    BoxIcon.Kind = PackIconKind.None; 
+                    this.Width -= 70;
                     break;
             }
         }

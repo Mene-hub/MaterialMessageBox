@@ -13,12 +13,12 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="MaterialMessageBox" Height="215" Width="360" Closing="setDefault" MinHeight="215" MinWidth="360" ResizeMode="NoResize" MaxWidth="360" MaxHeight="215">
+        Title="MaterialMessageBox" Height="215" Width="290" Closing="setDefault" MinHeight="215" MinWidth="290" ResizeMode="NoResize" MaxWidth="360" MaxHeight="215" WindowStartupLocation="CenterScreen" Topmost="True">
     <Grid>
-        <materialDesign:PackIcon x:Name="BoxIcon" HorizontalAlignment="Right" VerticalAlignment="Top" Width="70" Height="70" Margin="0,12,12,0" Foreground="#FFFFB900"></materialDesign:PackIcon>
+        <materialDesign:PackIcon x:Name="BoxIcon" HorizontalAlignment="Right" VerticalAlignment="Top" Width="70" Height="70" Margin="0,30,12.5,0" Foreground="#FFFFB900" Kind="None"></materialDesign:PackIcon>
             
             <ScrollViewer Width="250" MinWidth="250" MaxWidth="250" Height="110" MinHeight="110" MaxHeight="110" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" VerticalScrollBarVisibility="Hidden">
-                <TextBlock Name="Content" MaxWidth="250" TextWrapping="Wrap" Margin="0" MinWidth="250" Width="250" ScrollViewer.CanContentScroll="True" VerticalAlignment="Top" HorizontalAlignment="Left" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+                <TextBlock Name="Content" MaxWidth="250" TextWrapping="Wrap" Margin="0" MinWidth="250" Width="250" ScrollViewer.CanContentScroll="True" VerticalAlignment="Center" HorizontalAlignment="Left" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
             </ScrollViewer>
 
             <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10" Orientation="Horizontal" Grid.Row="1">

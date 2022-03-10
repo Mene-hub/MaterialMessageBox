@@ -67,7 +67,7 @@ all supported Result type:
 <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.**dark**.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
@@ -126,7 +126,7 @@ public static Color iconColor;
 
 ```csharp
 //for reset allBox colors
-public static void resetcolors();
+public static void resercolors();
 
 //for reset only one color, this works with all propreties
 MaterialMessageBox.OKButtonColor = new Color();
@@ -138,7 +138,7 @@ MaterialMessageBox.OKButtonColor = new Color();
 //from Hex color
 MaterialMessageBox.YesButtonColor = (Color)ColorConverter.ConvertFromString(string HexCode);
 
-//from red greem and blue value
+//from red green and blue value
 MaterialMessageBox.NoButtonColor = Color.fromRgb(byte r, byte g, byte b);
 ```
 
@@ -153,5 +153,32 @@ MaterialMessageBox.iconColor = (Color)ColorConverter.ConvertFromString("#00AB44"
 MaterialMessageBox.backgroundColor = (Color)ColorConverter.ConvertFromString("#ffffff");
 MaterialMessageBox.foregroundColor = (Color)ColorConverter.ConvertFromString("#000000");
 ```
+
 ![image](https://user-images.githubusercontent.com/72011313/157653660-5ac1aae3-2193-4e32-bfbe-b227a72b6838.png)
 
+
+### costumize buttons alignment
+
+**alignment propreties**
+
+```csharp
+//set the horizontal alignment of buttons
+public static HorizontalAlignment buttonsAlignment;
+```
+
+**how to use it**
+
+```csharp
+//set left
+MaterialMessageBox.buttonsAlignment = HorizontalAlignment.Left;
+
+//set center
+MaterialMessageBox.buttonsAlignment = HorizontalAlignment.Center;
+
+//set right (default value)
+MaterialMessageBox.buttonsAlignment = HorizontalAlignment.Right;
+```
+
+**example**
+
+![image](https://user-images.githubusercontent.com/72011313/157656571-ed60bc81-21f7-402a-99ed-e9a3860abe4b.png)

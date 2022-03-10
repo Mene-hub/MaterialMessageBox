@@ -14,6 +14,9 @@
 ### **Documentation**
 
 ```csharp
+//style setter for MessageBox
+public static MessageBoxStyle Style;
+
 //for a custom message
 public static MessageBoxResult Show(string messageBoxText);
 
@@ -93,11 +96,9 @@ if(MaterialMessageBox.Show(obj.ToString(), "Question", MessageBoxButton.YesNo, M
 MaterialMessageBox.Show(e.message, "Message", MessageBoxButton.OK, MessageBoxImage.None, MessageBoxResult.OK);
 ```
 
-![image](https://user-images.githubusercontent.com/72011313/157635155-7344b643-8fef-4d6a-a372-54cfd19c2f7f.png)
-
 ### costumized Buttons, Box background and Box foreground
 
-**color proprieties**
+**MessageBoxStyle properties**
 
 ```csharp
 //for change the Box background color
@@ -120,65 +121,102 @@ public static Color YesButtonForegroundColor;
 
 //for change the color of the visible icon
 public static Color iconColor;
+
+//for change the buttons position
+public HorizontalAlignment buttonsAlignment;
 ```
 
-**color methods**
+**MessageBoxStyle methods**
 
 ```csharp
-//for reset allBox colors
-public static void resercolors();
+//empty constructor
+public MessageBoxStyle();
 
-//for reset only one color, this works with all propreties
+//contractor with default style
+public MessageBoxStyle(DefaultBoxStyle style);
+
+//for set the default value for that component
 MaterialMessageBox.OKButtonColor = new Color();
 ```
 
-**how to set colors**
+**DefaultBoxStyle** `enum`
+
+- `Default`
+- `lightDark`
+- `allWhite`
 
 ```csharp
-//from Hex color
-MaterialMessageBox.YesButtonColor = (Color)ColorConverter.ConvertFromString(string HexCode);
-
-//from red green and blue value
-MaterialMessageBox.NoButtonColor = Color.fromRgb(byte r, byte g, byte b);
-```
-
-**example**
-
-```csharp
-MaterialMessageBox.OKButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
-MaterialMessageBox.YesButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
-MaterialMessageBox.NoButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
-MaterialMessageBox.CancelButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
-MaterialMessageBox.iconColor = (Color)ColorConverter.ConvertFromString("#00AB44");
-MaterialMessageBox.backgroundColor = (Color)ColorConverter.ConvertFromString("#ffffff");
-MaterialMessageBox.foregroundColor = (Color)ColorConverter.ConvertFromString("#000000");
-```
-
-![image](https://user-images.githubusercontent.com/72011313/157653660-5ac1aae3-2193-4e32-bfbe-b227a72b6838.png)
-
-
-### costumize buttons alignment
-
-**alignment propreties**
-
-```csharp
-//set the horizontal alignment of buttons
-public static HorizontalAlignment buttonsAlignment;
+public enum DefaultBoxStyle
+{
+	Default,
+	lightDark,
+	allWhite
+}
 ```
 
 **how to use it**
 
 ```csharp
-//set left
-MaterialMessageBox.buttonsAlignment = HorizontalAlignment.Left;
+MessageBoxStyle myStyle = new MessageBoxStyle();
+//or
+MessageBoxStyle myDefaultStyle = new MessageBoxStyle(DefaultBoxStyle.Default);
 
-//set center
-MaterialMessageBox.buttonsAlignment = HorizontalAlignment.Center;
+//from Hex Value
+myStyle.YesButtonColor = (Color)ColorConverter.ConvertFromString(string HexCode);
 
-//set right (default value)
-MaterialMessageBox.buttonsAlignment = HorizontalAlignment.Right;
+//from red green and blue value
+myStyle.NoButtonColor = Color.fromRgb(byte r, byte g, byte b);
+
+//for set the button alignment
+myStyle.buttonsAlignment = HorizontalAlignment.Right;
+
+//for set the MessageBox Style
+MaterialMessageBox.Style = myStyle;
 ```
 
-**example**
+**examples**
 
-![image](https://user-images.githubusercontent.com/72011313/157656571-ed60bc81-21f7-402a-99ed-e9a3860abe4b.png)
+```csharp
+MessageBoxStyle myStyle = new MessageBoxStyle();
+
+myStyle.backgroundColor = Color.fromRgb(255, 255, 255);
+myStyle.foregroundColor = Color.fromRgb(0, 0, 0);
+
+myStyle.OKButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
+myStyle.YesButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
+myStyle.NoButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
+myStyle.CancelButtonColor = (Color)ColorConverter.ConvertFromString("#00CE52");
+
+myStyle.OKButtonForegroundColor = (Color)ColorConverter.ConvertFromString("#ffffff");
+myStyle.YesButtonForegroundColor = (Color)ColorConverter.ConvertFromString("#ffffff");
+myStyle.NoButtonForegroundColor = (Color)ColorConverter.ConvertFromString("#ffffff");
+myStyle.CancelButtonForegroundColor = (Color)ColorConverter.ConvertFromString("#ffffff");
+
+myStyle .iconColor = (Color)ColorConverter.ConvertFromString("#00AB44");
+
+myStyle.buttonsAlignment = HorizontalAlignment.Right;
+
+MaterialMessageBox.Style = myStyle;
+```
+
+### Results
+
+**Material Design** `DefaultBoxStyle.Default` *****light* **Style**
+
+![default white](https://user-images.githubusercontent.com/72011313/157749498-1bd90cc7-c4fb-4b3e-a920-350058263d4b.png)
+
+**Material Design** `DefaultBoxStyle.Default` *dark* **Style**
+
+![default black](https://user-images.githubusercontent.com/72011313/157749536-ef4aef24-fbea-4538-a676-9c2f004be281.png)
+
+`faultBoxStyle.allWhite`
+
+![allWhite](https://user-images.githubusercontent.com/72011313/157749568-edcaca18-1edc-442f-9f6e-0fb2404dad63.png)
+
+`faultBoxStyle.lightDark`
+
+![lightDark](https://user-images.githubusercontent.com/72011313/157749633-54312d01-903e-4b6f-9b1b-f90fba34b6e5.png)
+
+**Full Custom**
+
+![full custom](https://user-images.githubusercontent.com/72011313/157749697-00b16dd5-fff8-4331-baed-e13bcc8c763b.png)

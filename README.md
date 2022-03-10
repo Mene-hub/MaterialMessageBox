@@ -126,7 +126,7 @@ public static Color iconColor;
 
 ```csharp
 //for reset allBox colors
-public static void resercolors();
+public static void resetcolors();
 
 //for reset only one color, this works with all propreties
 MaterialMessageBox.OKButtonColor = new Color();

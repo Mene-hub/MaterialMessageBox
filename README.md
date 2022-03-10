@@ -201,18 +201,18 @@ MaterialMessageBox.Style = myStyle;
 
 ### Results
 
-**Material Design** `DefaultBoxStyle.Default` *light* **Style**
+- **Material Design** `DefaultBoxStyle.Default` *light* **Style**
 
 ![default white](https://user-images.githubusercontent.com/72011313/157749498-1bd90cc7-c4fb-4b3e-a920-350058263d4b.png)
 
-**Material Design** `DefaultBoxStyle.Default` *dark* **Style**
+- **Material Design** `DefaultBoxStyle.Default` *dark* **Style**
 
 ![default black](https://user-images.githubusercontent.com/72011313/157749536-ef4aef24-fbea-4538-a676-9c2f004be281.png)
 
-`faultBoxStyle.allWhite`
+- DefaultBoxStyle.allWhite
 
 ![allWhite](https://user-images.githubusercontent.com/72011313/157749568-edcaca18-1edc-442f-9f6e-0fb2404dad63.png)
 
-`faultBoxStyle.lightDark`
+- DefaultBoxStyle.lightDark
 
 ![lightDark](https://user-images.githubusercontent.com/72011313/157749633-54312d01-903e-4b6f-9b1b-f90fba34b6e5.png)

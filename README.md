@@ -9,7 +9,7 @@
 1. this Library works with MaterialDesign, so you need to install [THIS](https://www.nuget.org/packages/MaterialDesignThemes/4.4.0-ci94) package from NuGet
 2. download the .dll file from the releases ([direct download](https://github.com/Mene-hub/MaterialMessageBox/releases/download/library/CusomMessageBox.dll))
 3. open your project in VisualStudio and add it as a reference ([how to do it](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-and-remove-project-dependencies?view=vs-2022))
-4. `usingCustomMessageBox;`
+4. `using CustomMessageBox;`
 
 ### **Documentation**
 
@@ -201,7 +201,7 @@ MaterialMessageBox.Style = myStyle;
 
 ### Results
 
-**Material Design** `DefaultBoxStyle.Default` *****light* **Style**
+**Material Design** `DefaultBoxStyle.Default` *light* **Style**
 
 ![default white](https://user-images.githubusercontent.com/72011313/157749498-1bd90cc7-c4fb-4b3e-a920-350058263d4b.png)
 
@@ -216,7 +216,3 @@ MaterialMessageBox.Style = myStyle;
 `faultBoxStyle.lightDark`
 
 ![lightDark](https://user-images.githubusercontent.com/72011313/157749633-54312d01-903e-4b6f-9b1b-f90fba34b6e5.png)
-
-**Full Custom**
-
-![full custom](https://user-images.githubusercontent.com/72011313/157749697-00b16dd5-fff8-4331-baed-e13bcc8c763b.png)

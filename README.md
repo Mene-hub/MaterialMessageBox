@@ -59,7 +59,7 @@ all supported Result type:
 - `MessageBoxResult.No;`
 - `MessageBoxResult.None;`
 
-H**ow use it**
+H**ow to use it**
 
 `MaterialMessageBox` will use the same Theme you chosed in `App.xaml`
 

@@ -231,6 +231,23 @@ MaterialMessageBox.Style = myStyle;
 ![lightDark](https://user-images.githubusercontent.com/72011313/157749633-54312d01-903e-4b6f-9b1b-f90fba34b6e5.png)
 
 - **custom example**
+-
+```csharp
+MessageBoxStyle Style = new MessageBoxStyle(DefaultBoxStyle.allWhite);
+
+Style.YesButtonColor = (Color)ColorConverter.ConvertFromString("#D9D9D9");
+Style.NoButtonColor = (Color)ColorConverter.ConvertFromString("#A7A7A7");
+Style.CancelButtonColor = (Color)ColorConverter.ConvertFromString("#FFFFFF");
+
+Style.YesButtonIcon = MaterialDesignThemes.Wpf.PackIconKind.Cat;
+Style.NoButtonIcon = MaterialDesignThemes.Wpf.PackIconKind.Dog;
+Style.CancelButtonIcon = MaterialDesignThemes.Wpf.PackIconKind.Fish;
+
+Style.buttonsAlignment = HorizontalAlignment.Left;
+
+MaterialMessageBox.Style = Style;
+MaterialMessageBox.Show("TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT ", "Custom Title", MessageBoxButton.YesNoCancel, MessageBoxImage.Information);
+```
 
 ![image](https://user-images.githubusercontent.com/72011313/157848548-e65f9b3a-26a2-4baf-b93b-a0edcac7e533.png)
 

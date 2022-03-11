@@ -9,7 +9,7 @@
 1. this Library works with MaterialDesign, so you need to install [THIS](https://www.nuget.org/packages/MaterialDesignThemes/4.4.0-ci94) package from NuGet
 2. download the .dll file from the releases ([direct download](https://github.com/Mene-hub/MaterialMessageBox/releases/download/library/CusomMessageBox.dll))
 3. open your project in VisualStudio and add it as a reference ([how to do it](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-and-remove-project-dependencies?view=vs-2022))
-4. `usingCustomMessageBox;`
+4. `using CustomMessageBox;`
 
 ### **Documentation**
 

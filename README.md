@@ -231,7 +231,7 @@ MaterialMessageBox.Style = myStyle;
 ![lightDark](https://user-images.githubusercontent.com/72011313/157749633-54312d01-903e-4b6f-9b1b-f90fba34b6e5.png)
 
 - **custom example**
--
+
 ```csharp
 MessageBoxStyle Style = new MessageBoxStyle(DefaultBoxStyle.allWhite);
 

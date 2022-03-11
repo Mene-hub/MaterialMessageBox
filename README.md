@@ -9,7 +9,7 @@
 1. this Library works with MaterialDesign, so you need to install [THIS](https://www.nuget.org/packages/MaterialDesignThemes/4.4.0-ci94) package from NuGet
 2. download the .dll file from the releases ([direct download](https://github.com/Mene-hub/MaterialMessageBox/releases/download/library/CusomMessageBox.dll))
 3. open your project in VisualStudio and add it as a reference ([how to do it](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-and-remove-project-dependencies?view=vs-2022))
-4. `using CustomMessageBox;`
+4. `usingCustomMessageBox;`
 
 ### **Documentation**
 
@@ -96,7 +96,7 @@ if(MaterialMessageBox.Show(obj.ToString(), "Question", MessageBoxButton.YesNo, M
 MaterialMessageBox.Show(e.message, "Message", MessageBoxButton.OK, MessageBoxImage.None, MessageBoxResult.OK);
 ```
 
-### costumized Buttons, Box background and Box foreground
+### costumize Buttons
 
 **MessageBoxStyle properties**
 
@@ -118,6 +118,12 @@ public static Color OKButtonForegroundColor;
 public static Color CancelButtonForegroundColor;
 public static Color NoButtonForegroundColor;
 public static Color YesButtonForegroundColor;
+
+//for change the icon of any different buttons
+public PackIconKind OKButtonIcon;
+public PackIconKind CancelButtonIcon;
+public PackIconKind NoButtonIcon;
+public PackIconKind YesButtonIcon;
 
 //for change the color of the visible icon
 public static Color iconColor;
@@ -167,6 +173,9 @@ myStyle.YesButtonColor = (Color)ColorConverter.ConvertFromString(string HexCode)
 //from red green and blue value
 myStyle.NoButtonColor = Color.fromRgb(byte r, byte g, byte b);
 
+//for set the buttons icon
+myStyle.NoButtonIcon = PackIconKind.Close;
+
 //for set the button alignment
 myStyle.buttonsAlignment = HorizontalAlignment.Right;
 
@@ -194,6 +203,10 @@ myStyle.CancelButtonForegroundColor = (Color)ColorConverter.ConvertFromString("#
 
 myStyle .iconColor = (Color)ColorConverter.ConvertFromString("#00AB44");
 
+myStyle.YesButtonIcon = PackIconKind.Cat;
+myStyle.NoButtonIcon = PackIconKind.Dog;
+myStyle.CancelButtonIcon = PackIconKind.Fish;
+
 myStyle.buttonsAlignment = HorizontalAlignment.Right;
 
 MaterialMessageBox.Style = myStyle;
@@ -216,3 +229,8 @@ MaterialMessageBox.Style = myStyle;
 - DefaultBoxStyle.lightDark
 
 ![lightDark](https://user-images.githubusercontent.com/72011313/157749633-54312d01-903e-4b6f-9b1b-f90fba34b6e5.png)
+
+- **custom example**
+
+![image](https://user-images.githubusercontent.com/72011313/157848548-e65f9b3a-26a2-4baf-b93b-a0edcac7e533.png)
+

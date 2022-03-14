@@ -143,6 +143,9 @@ public MessageBoxStyle();
 //contractor with default style
 public MessageBoxStyle(DefaultBoxStyle style);
 
+//constractor with code style from website (at the top of doc)
+public MessageBoxStyle(string code);
+
 //for set the default value for that component
 MaterialMessageBox.OKButtonColor = new Color();
 ```
@@ -168,6 +171,8 @@ public enum DefaultBoxStyle
 MessageBoxStyle myStyle = new MessageBoxStyle();
 //or
 MessageBoxStyle myDefaultStyle = new MessageBoxStyle(DefaultBoxStyle.Default);
+//or
+MessageBoxStyle myCodeStyle("ff2e2effffffffffff9e0000ff5900ffbb00000000000000000000000000");
 
 //from Hex Value
 myStyle.YesButtonColor = (Color)ColorConverter.ConvertFromString(string HexCode);

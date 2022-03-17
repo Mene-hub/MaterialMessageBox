@@ -2,6 +2,10 @@
 
 ### MaterialMessageBox works on .Net Core and .Net Framework
 
+#### this library is the best free way to customize your MessageBox, every single part, option and propreties.
+#### with the default MessageBox methods and propreties.
+#### You can also create new MessageBoxStyle objects in C# or in the live preview with the link below
+
 #### CREATE YOUR CUSTOM CODE HERE: ([CODE GENERATOR](http://claudio.menegotto.unaux.com/assets/custommessagebox/customize/))
 
 # How it works?
